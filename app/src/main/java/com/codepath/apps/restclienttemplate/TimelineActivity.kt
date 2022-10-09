@@ -48,11 +48,14 @@ class TimelineActivity : AppCompatActivity() {
 
         adapter = TweetsAdapter(tweets)
 
+        //EndlessRecyclerViewScrollListener
+
         rvTweets.layoutManager = LinearLayoutManager(this)
 
         rvTweets.adapter = adapter
 
         PopulateHomeTimeline()
+
 
     }
 
@@ -93,6 +96,8 @@ class TimelineActivity : AppCompatActivity() {
 
         })
     }
+
+            //endless recycler scroll lister
 
     companion object{
         val TAG= "TimelineActivity"

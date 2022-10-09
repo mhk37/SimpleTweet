@@ -1,7 +1,10 @@
 package com.codepath.apps.restclienttemplate.models
 
+import android.text.format.DateUtils
+import com.codepath.apps.restclienttemplate.TimeFormatter
 import org.json.JSONArray
 import org.json.JSONObject
+
 
 class Tweet {
 
@@ -25,6 +28,7 @@ class Tweet {
             }
             return tweets
         }
+
 
     }
 
